@@ -1,0 +1,2 @@
+# ppshuai_async_redis_cluster
+一个基于hiredis和libuv的异步请求访问封装库，可以轻松自由的在windows/linux下访问redis（支持集群）
