@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uv_a", "ThirdParty\libuv\vsprojects\uv_a.vcxproj", "{E7D39A66-6950-31A3-86B3-EB8652940E6D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hiredis_a", "ThirdParty\hiredis\vsprojects\hiredis_a.vcxproj", "{37B4B57D-F558-4ABF-84C1-68B6649D86EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "async_redis_cluster", "windows\async_redis_cluster.vcxproj", "{DAF6E345-5695-4585-9084-D99E55BA9E55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{BC42BFBB-E664-46BA-971F-ECBE3D042030}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linux", "Linux", "{0DBF6626-7657-4F09-A9FA-37553FC16CA4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "async_redis_cluster", "linux\async_redis_cluster.vcxproj", "{91F170FD-0B38-4DD3-9934-5A9C9ABC4C90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7D39A66-6950-31A3-86B3-EB8652940E6D}.Debug|x64.ActiveCfg = Debug|x64
+		{E7D39A66-6950-31A3-86B3-EB8652940E6D}.Debug|x64.Build.0 = Debug|x64
+		{E7D39A66-6950-31A3-86B3-EB8652940E6D}.Release|x64.ActiveCfg = Debug|x64
+		{E7D39A66-6950-31A3-86B3-EB8652940E6D}.Release|x64.Build.0 = Debug|x64
+		{37B4B57D-F558-4ABF-84C1-68B6649D86EC}.Debug|x64.ActiveCfg = Debug|x64
+		{37B4B57D-F558-4ABF-84C1-68B6649D86EC}.Debug|x64.Build.0 = Debug|x64
+		{37B4B57D-F558-4ABF-84C1-68B6649D86EC}.Release|x64.ActiveCfg = Debug|x64
+		{37B4B57D-F558-4ABF-84C1-68B6649D86EC}.Release|x64.Build.0 = Debug|x64
+		{DAF6E345-5695-4585-9084-D99E55BA9E55}.Debug|x64.ActiveCfg = Debug|x64
+		{DAF6E345-5695-4585-9084-D99E55BA9E55}.Debug|x64.Build.0 = Debug|x64
+		{DAF6E345-5695-4585-9084-D99E55BA9E55}.Release|x64.ActiveCfg = Debug|x64
+		{DAF6E345-5695-4585-9084-D99E55BA9E55}.Release|x64.Build.0 = Debug|x64
+		{91F170FD-0B38-4DD3-9934-5A9C9ABC4C90}.Debug|x64.ActiveCfg = Debug|x64
+		{91F170FD-0B38-4DD3-9934-5A9C9ABC4C90}.Debug|x64.Build.0 = Debug|x64
+		{91F170FD-0B38-4DD3-9934-5A9C9ABC4C90}.Debug|x64.Deploy.0 = Debug|x64
+		{91F170FD-0B38-4DD3-9934-5A9C9ABC4C90}.Release|x64.ActiveCfg = Debug|x64
+		{91F170FD-0B38-4DD3-9934-5A9C9ABC4C90}.Release|x64.Build.0 = Debug|x64
+		{91F170FD-0B38-4DD3-9934-5A9C9ABC4C90}.Release|x64.Deploy.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7D39A66-6950-31A3-86B3-EB8652940E6D} = {BC42BFBB-E664-46BA-971F-ECBE3D042030}
+		{37B4B57D-F558-4ABF-84C1-68B6649D86EC} = {BC42BFBB-E664-46BA-971F-ECBE3D042030}
+		{DAF6E345-5695-4585-9084-D99E55BA9E55} = {BC42BFBB-E664-46BA-971F-ECBE3D042030}
+		{91F170FD-0B38-4DD3-9934-5A9C9ABC4C90} = {0DBF6626-7657-4F09-A9FA-37553FC16CA4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5274B07F-9CF0-473B-BF2D-0375F207655A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{91f170fd-0b38-4dd3-9934-5a9c9abc4c90}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>async_redis_cluster</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="..\src\async_redis_cluster.cpp" />
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\async.c" />
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\dict.c" />
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\hiredis.c" />
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\net.c" />
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\read.c" />
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\sds.c" />
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\sockcompat.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\fs-poll.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\idna.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\inet.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\random.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\strscpy.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\threadpool.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\timer.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\libuv_async.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\core.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\dl.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\fs.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\getaddrinfo.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\getnameinfo.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\linux-core.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\linux-inotify.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\linux-syscalls.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\loop-watcher.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\loop.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\pipe.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\poll.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\process.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\procfs-exepath.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\proctitle.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\random-devurandom.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\random-getrandom.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\random-sysctl-linux.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\signal.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\stream.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\sysinfo-loadavg.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\tcp.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\thread.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\tty.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\udp.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\uv-common.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\uv-data-getter-setters.c" />
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\version.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\adapters\libuv.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\async.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\async_private.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\dict.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\fmacros.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\hiredis.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\net.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\read.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\sds.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\sdsalloc.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\sockcompat.h" />
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\win32.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\errno.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\linux.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\threadpool.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\tree.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\unix.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\version.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\heap-inl.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\idna.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\queue.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\strscpy.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\unix\atomic-ops.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\unix\internal.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\unix\linux-syscalls.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\unix\spinlock.h" />
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\uv-common.h" />
+    <ClInclude Include="..\src\async_redis_cluster.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <LibraryDependencies>pthread;dl;</LibraryDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../ThirdParty/hiredis/hiredis;$(ProjectDir)../ThirdParty/libuv/libuv/include;$(ProjectDir)../ThirdParty/libuv/libuv/src;$(ProjectDir)../ThirdParty/libuv/libuv/src/unix;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FILE_OFFSET_BITS=64;_GNU_SOURCE;_LARGEFILE_SOURCE;_POSIX_C_SOURCE=200112;</PreprocessorDefinitions>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>COPY $(SolutionDir)ThirdParty\libuv\libuv\src\unix\async.c $(SolutionDir)ThirdParty\libuv\libuv\src\unix\libuv_async.c /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <LibraryDependencies>pthread;dl;</LibraryDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../ThirdParty/hiredis/hiredis;$(ProjectDir)../ThirdParty/libuv/libuv/include;$(ProjectDir)../ThirdParty/libuv/libuv/src;$(ProjectDir)../ThirdParty/libuv/libuv/src/unix;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_FILE_OFFSET_BITS=64;_GNU_SOURCE;_LARGEFILE_SOURCE;_POSIX_C_SOURCE=200112;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>COPY $(SolutionDir)ThirdParty\libuv\libuv\src\unix\async.c $(SolutionDir)ThirdParty\libuv\libuv\src\unix\libuv_async.c /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

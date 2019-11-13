@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5FBB54AF-FA8C-3EAD-A1F8-5DE8295E007B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>uv_run_tests_a</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>uv_a.lib;ws2_32.lib;advapi32.lib;iphlpapi.lib;psapi.lib;shell32.lib;user32.lib;userenv.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>uv_a.lib;ws2_32.lib;advapi32.lib;iphlpapi.lib;psapi.lib;shell32.lib;user32.lib;userenv.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>uv_a.lib;ws2_32.lib;advapi32.lib;iphlpapi.lib;psapi.lib;shell32.lib;user32.lib;userenv.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\libuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>uv_a.lib;ws2_32.lib;advapi32.lib;iphlpapi.lib;psapi.lib;shell32.lib;user32.lib;userenv.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libuv\test\blackhole-server.c" />
+    <ClCompile Include="..\libuv\test\echo-server.c" />
+    <ClCompile Include="..\libuv\test\run-tests.c" />
+    <ClCompile Include="..\libuv\test\runner.c" />
+    <ClCompile Include="..\libuv\test\test-active.c" />
+    <ClCompile Include="..\libuv\test\test-async-null-cb.c" />
+    <ClCompile Include="..\libuv\test\test-async.c" />
+    <ClCompile Include="..\libuv\test\test-barrier.c" />
+    <ClCompile Include="..\libuv\test\test-callback-order.c" />
+    <ClCompile Include="..\libuv\test\test-callback-stack.c" />
+    <ClCompile Include="..\libuv\test\test-close-fd.c" />
+    <ClCompile Include="..\libuv\test\test-close-order.c" />
+    <ClCompile Include="..\libuv\test\test-condvar.c" />
+    <ClCompile Include="..\libuv\test\test-connect-unspecified.c" />
+    <ClCompile Include="..\libuv\test\test-connection-fail.c" />
+    <ClCompile Include="..\libuv\test\test-cwd-and-chdir.c" />
+    <ClCompile Include="..\libuv\test\test-default-loop-close.c" />
+    <ClCompile Include="..\libuv\test\test-delayed-accept.c" />
+    <ClCompile Include="..\libuv\test\test-dlerror.c" />
+    <ClCompile Include="..\libuv\test\test-eintr-handling.c" />
+    <ClCompile Include="..\libuv\test\test-embed.c" />
+    <ClCompile Include="..\libuv\test\test-emfile.c" />
+    <ClCompile Include="..\libuv\test\test-env-vars.c" />
+    <ClCompile Include="..\libuv\test\test-error.c" />
+    <ClCompile Include="..\libuv\test\test-fail-always.c" />
+    <ClCompile Include="..\libuv\test\test-fork.c" />
+    <ClCompile Include="..\libuv\test\test-fs-copyfile.c" />
+    <ClCompile Include="..\libuv\test\test-fs-event.c" />
+    <ClCompile Include="..\libuv\test\test-fs-poll.c" />
+    <ClCompile Include="..\libuv\test\test-fs.c" />
+    <ClCompile Include="..\libuv\test\test-fs-readdir.c" />
+    <ClCompile Include="..\libuv\test\test-fs-fd-hash.c" />
+    <ClCompile Include="..\libuv\test\test-fs-open-flags.c" />
+    <ClCompile Include="..\libuv\test\test-get-currentexe.c" />
+    <ClCompile Include="..\libuv\test\test-get-loadavg.c" />
+    <ClCompile Include="..\libuv\test\test-get-memory.c" />
+    <ClCompile Include="..\libuv\test\test-get-passwd.c" />
+    <ClCompile Include="..\libuv\test\test-getaddrinfo.c" />
+    <ClCompile Include="..\libuv\test\test-gethostname.c" />
+    <ClCompile Include="..\libuv\test\test-getnameinfo.c" />
+    <ClCompile Include="..\libuv\test\test-getsockname.c" />
+    <ClCompile Include="..\libuv\test\test-getters-setters.c" />
+    <ClCompile Include="..\libuv\test\test-gettimeofday.c" />
+    <ClCompile Include="..\libuv\test\test-handle-fileno.c" />
+    <ClCompile Include="..\libuv\test\test-homedir.c" />
+    <ClCompile Include="..\libuv\test\test-hrtime.c" />
+    <ClCompile Include="..\libuv\test\test-idle.c" />
+    <ClCompile Include="..\libuv\test\test-idna.c" />
+    <ClCompile Include="..\libuv\test\test-ip4-addr.c" />
+    <ClCompile Include="..\libuv\test\test-ip6-addr.c" />
+    <ClCompile Include="..\libuv\test\test-ipc-heavy-traffic-deadlock-bug.c" />
+    <ClCompile Include="..\libuv\test\test-ipc-send-recv.c" />
+    <ClCompile Include="..\libuv\test\test-ipc.c" />
+    <ClCompile Include="..\libuv\test\test-loop-alive.c" />
+    <ClCompile Include="..\libuv\test\test-loop-close.c" />
+    <ClCompile Include="..\libuv\test\test-loop-configure.c" />
+    <ClCompile Include="..\libuv\test\test-loop-handles.c" />
+    <ClCompile Include="..\libuv\test\test-loop-stop.c" />
+    <ClCompile Include="..\libuv\test\test-loop-time.c" />
+    <ClCompile Include="..\libuv\test\test-multiple-listen.c" />
+    <ClCompile Include="..\libuv\test\test-mutexes.c" />
+    <ClCompile Include="..\libuv\test\test-osx-select.c" />
+    <ClCompile Include="..\libuv\test\test-pass-always.c" />
+    <ClCompile Include="..\libuv\test\test-ping-pong.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-bind-error.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-close-stdout-read-stdin.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-connect-error.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-connect-multiple.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-connect-prepare.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-getsockname.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-pending-instances.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-sendmsg.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-server-close.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-set-fchmod.c" />
+    <ClCompile Include="..\libuv\test\test-pipe-set-non-blocking.c" />
+    <ClCompile Include="..\libuv\test\test-platform-output.c" />
+    <ClCompile Include="..\libuv\test\test-poll-close-doesnt-corrupt-stack.c" />
+    <ClCompile Include="..\libuv\test\test-poll-close.c" />
+    <ClCompile Include="..\libuv\test\test-poll-closesocket.c" />
+    <ClCompile Include="..\libuv\test\test-poll-oob.c" />
+    <ClCompile Include="..\libuv\test\test-poll.c" />
+    <ClCompile Include="..\libuv\test\test-process-priority.c" />
+    <ClCompile Include="..\libuv\test\test-process-title-threadsafe.c" />
+    <ClCompile Include="..\libuv\test\test-process-title.c" />
+    <ClCompile Include="..\libuv\test\test-queue-foreach-delete.c" />
+    <ClCompile Include="..\libuv\test\test-random.c" />
+    <ClCompile Include="..\libuv\test\test-ref.c" />
+    <ClCompile Include="..\libuv\test\test-run-nowait.c" />
+    <ClCompile Include="..\libuv\test\test-run-once.c" />
+    <ClCompile Include="..\libuv\test\test-semaphore.c" />
+    <ClCompile Include="..\libuv\test\test-shutdown-close.c" />
+    <ClCompile Include="..\libuv\test\test-shutdown-eof.c" />
+    <ClCompile Include="..\libuv\test\test-shutdown-twice.c" />
+    <ClCompile Include="..\libuv\test\test-signal-multiple-loops.c" />
+    <ClCompile Include="..\libuv\test\test-signal-pending-on-close.c" />
+    <ClCompile Include="..\libuv\test\test-signal.c" />
+    <ClCompile Include="..\libuv\test\test-socket-buffer-size.c" />
+    <ClCompile Include="..\libuv\test\test-spawn.c" />
+    <ClCompile Include="..\libuv\test\test-stdio-over-pipes.c" />
+    <ClCompile Include="..\libuv\test\test-strscpy.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-alloc-cb-fail.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-bind-error.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-bind6-error.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-close-accept.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-close-while-connecting.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-close.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-close-reset.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-connect-error-after-write.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-connect-error.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-connect-timeout.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-connect6-error.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-create-socket-early.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-flags.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-oob.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-open.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-read-stop.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-shutdown-after-write.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-try-write.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-try-write-error.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-unexpected-read.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-write-after-connect.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-write-fail.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-write-queue-order.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-write-to-half-open-connection.c" />
+    <ClCompile Include="..\libuv\test\test-tcp-writealot.c" />
+    <ClCompile Include="..\libuv\test\test-thread-equal.c" />
+    <ClCompile Include="..\libuv\test\test-thread.c" />
+    <ClCompile Include="..\libuv\test\test-threadpool-cancel.c" />
+    <ClCompile Include="..\libuv\test\test-threadpool.c" />
+    <ClCompile Include="..\libuv\test\test-timer-again.c" />
+    <ClCompile Include="..\libuv\test\test-timer-from-check.c" />
+    <ClCompile Include="..\libuv\test\test-timer.c" />
+    <ClCompile Include="..\libuv\test\test-tmpdir.c" />
+    <ClCompile Include="..\libuv\test\test-tty-duplicate-key.c" />
+    <ClCompile Include="..\libuv\test\test-tty.c" />
+    <ClCompile Include="..\libuv\test\test-udp-alloc-cb-fail.c" />
+    <ClCompile Include="..\libuv\test\test-udp-bind.c" />
+    <ClCompile Include="..\libuv\test\test-udp-connect.c" />
+    <ClCompile Include="..\libuv\test\test-udp-create-socket-early.c" />
+    <ClCompile Include="..\libuv\test\test-udp-dgram-too-big.c" />
+    <ClCompile Include="..\libuv\test\test-udp-ipv6.c" />
+    <ClCompile Include="..\libuv\test\test-udp-multicast-interface.c" />
+    <ClCompile Include="..\libuv\test\test-udp-multicast-interface6.c" />
+    <ClCompile Include="..\libuv\test\test-udp-multicast-join.c" />
+    <ClCompile Include="..\libuv\test\test-udp-multicast-join6.c" />
+    <ClCompile Include="..\libuv\test\test-udp-multicast-ttl.c" />
+    <ClCompile Include="..\libuv\test\test-udp-open.c" />
+    <ClCompile Include="..\libuv\test\test-udp-options.c" />
+    <ClCompile Include="..\libuv\test\test-udp-send-and-recv.c" />
+    <ClCompile Include="..\libuv\test\test-udp-send-hang-loop.c" />
+    <ClCompile Include="..\libuv\test\test-udp-send-immediate.c" />
+    <ClCompile Include="..\libuv\test\test-udp-send-unreachable.c" />
+    <ClCompile Include="..\libuv\test\test-udp-try-send.c" />
+    <ClCompile Include="..\libuv\test\test-uname.c" />
+    <ClCompile Include="..\libuv\test\test-walk-handles.c" />
+    <ClCompile Include="..\libuv\test\test-watcher-cross-stop.c" />
+    <ClCompile Include="..\libuv\src\win\snprintf.c" />
+    <ClCompile Include="..\libuv\test\runner-win.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vsprojects\ZERO_CHECK.vcxproj">
+      <Project>{EBAE414A-C5C8-35A7-A6BC-6136B9746B09}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\vsprojects\uv_a.vcxproj">
+      <Project>{E7D39A66-6950-31A3-86B3-EB8652940E6D}</Project>
+      <Name>uv_a</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

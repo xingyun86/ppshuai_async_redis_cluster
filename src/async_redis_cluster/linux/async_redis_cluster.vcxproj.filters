@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\dict.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\hiredis.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\net.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\read.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\sds.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\sockcompat.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\hiredis\hiredis\async.c">
+      <Filter>hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\core.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\dl.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\fs.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\fs-poll.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\getaddrinfo.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\getnameinfo.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\idna.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\inet.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\libuv_async.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\linux-core.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\linux-inotify.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\proctitle.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\linux-syscalls.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\loop.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\loop-watcher.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\pipe.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\poll.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\process.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\procfs-exepath.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\random.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\stream.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\random-devurandom.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\random-getrandom.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\random-sysctl-linux.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\signal.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\strscpy.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\thread.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\sysinfo-loadavg.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\tcp.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\threadpool.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\timer.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\tty.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\unix\udp.c">
+      <Filter>libuv\src\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\version.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\uv-common.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\libuv\libuv\src\uv-data-getter-setters.c">
+      <Filter>libuv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\async_redis_cluster.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\dict.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\fmacros.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\hiredis.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\net.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\read.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\sds.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\sdsalloc.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\sockcompat.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\win32.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\async.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\async_private.h">
+      <Filter>hiredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\unix\atomic-ops.h">
+      <Filter>libuv\src\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\heap-inl.h">
+      <Filter>libuv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\idna.h">
+      <Filter>libuv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\unix\internal.h">
+      <Filter>libuv\src\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\hiredis\hiredis\adapters\libuv.h">
+      <Filter>libuv\adapters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\errno.h">
+      <Filter>libuv\include\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\linux.h">
+      <Filter>libuv\include\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\unix\linux-syscalls.h">
+      <Filter>libuv\src\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\queue.h">
+      <Filter>libuv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\unix\spinlock.h">
+      <Filter>libuv\src\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\strscpy.h">
+      <Filter>libuv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\threadpool.h">
+      <Filter>libuv\include\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv.h">
+      <Filter>libuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\unix.h">
+      <Filter>libuv\include\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\tree.h">
+      <Filter>libuv\include\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\include\uv\version.h">
+      <Filter>libuv\include\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\libuv\libuv\src\uv-common.h">
+      <Filter>libuv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\async_redis_cluster.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="hiredis">
+      <UniqueIdentifier>{8bbb13d5-ffdd-4966-8e0a-cb8ed42a9b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv">
+      <UniqueIdentifier>{8dfaa115-3ce1-4ae0-9a65-8fcecdf84e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv\src">
+      <UniqueIdentifier>{c826ea37-11ea-4bff-b763-9cc06a6caca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv\include">
+      <UniqueIdentifier>{5def4daf-ac96-4ba7-b0ea-6b4cffe389ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv\src\unix">
+      <UniqueIdentifier>{7b11bb97-d26d-4cc7-9176-86db25ffc7a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv\adapters">
+      <UniqueIdentifier>{d6af4773-8d74-409c-b670-54c7fcd1d945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libuv\include\uv">
+      <UniqueIdentifier>{984a67cb-ee1f-4747-a0b7-b0f824bafa8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f39cf5ce-6d1e-42d3-832a-6afb03028ca4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
